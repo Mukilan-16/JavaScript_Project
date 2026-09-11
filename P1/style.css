@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.conatiner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #af62ea, #8b4cc2);
+    color: antiquewhite;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+}
+
+.conatiner h1 {
+    font-weight: 600px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    animation: fadeDown 0.8s ease;
+}
+
+.conatiner h1 img {
+    width: 80px;
+    animation: spin 1s ease;
+}
+
+.conatiner button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #4d0d86);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 30px 0 20px;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+    animation: fadeUp 0.8s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.conatiner button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.conatiner button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+#input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease;
+    word-break: break-word;
+    vertical-align: top;
+}
+
+#input-box:focus {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#input-box img {
+    width: 40px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+#input-box img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
